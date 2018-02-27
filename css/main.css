@@ -1,18 +1,41 @@
 .navbar-default {
-    background-color: lavender;
-    box-shadow: 2px 2px 1px gray;
+    background-color: gray;
+    box-shadow: 2px 2px 1px black;
+    border: none;
+    min-height: 40px;
 }
 
 
-
-/*
 .navbar-default .navbar-brand {
-    font-family: "Libre Baskerville";
+    font-family: "Vollkorn SC";
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 20px;
+    text-weight: bold;
 }
 
-.navbar-default .navbar-nav {
-    font-family: "Libre Baskerville";
+.navbar-brand {
+    float: none;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-family: "Vollkorn SC";
+    background-color:
+
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #f0f5f5;
+
+}
+
+
 
 
 
