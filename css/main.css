@@ -1,6 +1,11 @@
+body {
+    background-color: lightgray;
+    padding-top: 3em;
+
+}
+
 .navbar-default {
     background-color: gray;
-    box-shadow: 2px 2px 1px black;
     border: none;
     min-height: 40px;
 }
@@ -34,6 +39,19 @@
     background-color: #f0f5f5;
 
 }
+/*
+#aboutNav {
+    background-image: url("http://img.foldingmaps.co.uk/products/world-framed-56778-large.jpg");
+    min-height: 500px;
+    background-repeat: no-repeat;
+    object-fit fill;
+
+}
+
+
+
+
+
 
 
 
