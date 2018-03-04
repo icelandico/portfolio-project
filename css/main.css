@@ -1,52 +1,56 @@
 body {
     background-color: lightgray;
     padding-top: 3em;
+    font-family: "Vollkorn SC";
 
+
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 .navbar-default {
     background-color: gray;
     border: none;
-    min-height: 40px;
+    box-shadow: 2px 2px black;
 }
 
 
 .navbar-default .navbar-brand {
-    font-family: "Vollkorn SC";
-    text-align: center;
-    float: left;
     color: white;
-    font-size: 20px;
     text-weight: bold;
 }
 
-.navbar-brand {
-    float: none;
-}
-
 .navbar-default .navbar-nav > li > a {
+    margin-left: 30px;
     color: white;
-    font-family: "Vollkorn SC";
-    background-color:
+    font-size: 25px;
 
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
 }
+
 
 .navbar-default .navbar-nav > li > a:hover {
     background-color: #f0f5f5;
+    border: 0;
 
 }
-/*
-#aboutNav {
-    background-image: url("http://img.foldingmaps.co.uk/products/world-framed-56778-large.jpg");
-    min-height: 500px;
+
+#topMap {
+    background-image: url("https://legacy.lib.utexas.edu/maps/historical/world_cyclopedia_1820.jpg");
+    background-position: center;
+    padding: 75px;
     background-repeat: no-repeat;
-    object-fit fill;
 
 }
+
+.welcome {
+    width: 450px;
+
+}
+
+
+
 
 
 
