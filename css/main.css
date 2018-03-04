@@ -6,10 +6,6 @@ body {
 
 }
 
-.navbar-nav {
-    text-align: center;
-}
-
 .navbar-default {
     background-color: gray;
     border: none;
@@ -20,6 +16,10 @@ body {
 .navbar-default .navbar-brand {
     color: white;
     text-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: auto;
+
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -39,10 +39,11 @@ body {
 }
 
 #topMap {
-    background-image: url("https://legacy.lib.utexas.edu/maps/historical/world_cyclopedia_1820.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.5)),url("https://legacy.lib.utexas.edu/maps/historical/world_cyclopedia_1820.jpg");
     background-position: center;
     padding: 75px;
     background-repeat: no-repeat;
+    max-height: 160px;
 
 }
 
@@ -53,14 +54,16 @@ body {
 
 h2 {
     font-weight: bold;
+    margin: 0 auto;
 }
 
 p {
-    margin-top: 45px;
     font-size: 25px;
     font-style: italic;
     font-family: Norasi;
+    padding-top: 13px;
 }
+
 
 
 
