@@ -100,10 +100,11 @@ h2 {
 
 }
 
-.bottom a {
-    margin: 40px;
-    padding-right: 25px;
+.bla a {
     color: black;
+    padding:25px;
+    padding-top: 50px;
+    display: inline-block;
 }
 
 .bottom a:hover {
@@ -128,10 +129,16 @@ h2 {
 
 }
 
+.btn:focus {
+    background-color: dimgrey;
+
+}
+
 .img-responsive{
     backface-visibility: hidden;
     transition: 1s;
     opacity: 1;
+    border: 0;
 }
 
 .middle {
@@ -159,6 +166,12 @@ h2 {
     font-size:25px;
 }
 
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ADADAD;
+    font-size: 15px;
+}
 
 
 
