@@ -7,6 +7,8 @@ body {
     background-position: center;
     background-size: 100%, cover;
     background-attachment: fixed;
+    width: 75%;
+    margin: 0 auto;
 
 
 }
@@ -14,7 +16,7 @@ body {
 .navbar-default {
     background-color: gray;
     border: none;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -56,26 +58,28 @@ h2 {
     padding: 15px;
 }
 
-p {
+#aboutNav p:first-child {
     font-size: 25px;
     font-style: italic;
     font-family: Norasi;
     padding-top: 13px;
+
+}
+
+#aboutNav p:last-child {
+    font-size: 25px;
+    font-family: Norasi;
+    padding-top: 13px;
+    text-align: justify;
 }
 
 .about h2 {
     margin-top: 30px;
 }
 
-.about p {
-    font-size: 25px;
-    font-family: Norasi;
-
-}
-
-
 #worksNav {
     background-color: #e0e0d1;
+    opacity: 0.9;
 
 }
 
@@ -86,9 +90,84 @@ p {
 }
 
 .gallery {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
+
+#contactNav {
+    background-color: gray;
+    padding-top: 50px;
+
+}
+
+.bottom a {
+    margin: 40px;
+    padding-right: 25px;
+    color: black;
+}
+
+.bottom a:hover {
+    color: white;
+}
+
+.box {
+    padding-top: 60px;
+
+}
+
+.btn {
+    background-color:#376353;
+    border: none;
+    font-family: "Vollkorn SC";
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+
+.btn:hover {
+    background-color: #798ba8;
+
+}
+
+.img-responsive{
+    backface-visibility: hidden;
+    transition: 1s;
+    opacity: 1;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+.hovered .image:hover {
+    opacity: 0.3;
+}
+
+.hovered:hover .middle{
+    opacity: 1;
+
+}
+.text {
+    color: #526633;
+    background-color: lightgray;
+    padding: 20px;
+    font-size:25px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

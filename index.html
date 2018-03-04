@@ -13,17 +13,16 @@
 
     </head>
 
-    <body>
-    <div class="top">
+     <div class="top">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Michał Muszyński &emsp;<i class="fa fa-map"></i></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#aboutNav">About</a></li>
-                    <li><a href="#worksNav">Works</a></li>
-                    <li><a href="#contactNav">Contact</a></li>
+                    <li><a href="#aboutNav" class="anchor">About</a></li>
+                    <li><a href="#worksNav" class="anchor">Works</a></li>
+                    <li><a href="#contactNav" class="anchor">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +32,7 @@
         <h2>Cartographer for Hire</h2>
     </div>
 
-       <div class="container-fluid welcome" id="aboutNav">
+       <div class="container-fluid welcome box" id="aboutNav">
             <div class="row">
                 <div class="col-sm-5">
                     <h3>Proffesional at maps</h3>
@@ -48,46 +47,108 @@
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
            </div>
        </div>
-    <div class="container-fluid text-center" id="worksNav">
+    <div class="container-fluid text-center box" id="worksNav">
         <div class="row">
             <h2>Portfolio & Works</h2>
         </div>
         <div class="row">
-            <div class="col-xs-4">
-                <a href="https://codepen.io/icelandico/pen/aqNOLJ" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://codepen.io/icelandico/pen/aqNOLJ" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Tribute Page</div>
+                </div>
             </div>
-            <div class="col-xs-4">
-                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Historical Maps</div>
+                </div>
             </div>
 
-            <div class="col-xs-4">
-                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Historical Maps 2</div>
+                </div>
             </div>
 
         </div>
         <div class="row gallery">
-            <div class="col-xs-4">
-                <a href="https://codepen.io/icelandico/pen/aqNOLJ" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://codepen.io/icelandico/pen/aqNOLJ" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Historical Maps 3</div>
+                </div>
             </div>
-            <div class="col-xs-4">
-                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Historical Maps 4</div>
+                </div>
             </div>
 
-            <div class="col-xs-4">
-                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive"</a>
+            <div class="col-xs-4 hovered">
+                <a href="https://icelandico.carbonmade.com/" target="_blank"><img src="https://image.freepik.com/free-vector/grey-world-map_1053-431.jpg" class="image img-thumbnail img-responsive" style="width:100%"></a>
+                <div class="middle">
+                    <div class="text">Historical Maps 5</div>
+                </div>
             </div>
 
         </div>
-
-
    </div>
+
     <div class="container-fluid" id="contactNav">
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <form action ="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Example email">
+                        </div>
 
+                        </form>
+                    </div>
 
+                <div class="col-xs-6">
+                    <form action ="/action_page.php">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Example Name">
+                        </div>
+                    </form>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="textarea">Write Your feedback!</label>
+                                <textarea id="textarea" class="form-control id=textarea" placeholder="Write something nice...or not" rows="3"></textarea>
+                            </br><button type="button" class="btn btn-success btn-block">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4 bottom1">
+                <h2>You can find me on this sites</h2>
+                <div class="row bottom">
+                    <div class="col-xs-12">
+                        <a class="button" href="http://twitter.com/cartohistory" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="http://linkedin.com/in/michał-muszyński-819352118" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/icelandico" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+
+                    </div>
+
+            </div>
+        </div>
 
     </div>
-
-
+    </div>
     <script src="app.js" async></script>
     <script src="app.js" defer></script>
     <script src="app.js" async defer></script>
