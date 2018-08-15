@@ -15,23 +15,60 @@ body {
     border: 5px solid #596275;
 }
 
+.bar {
+    width: 90%;
+    background: #fff;
+    height: 8px;
+    margin: 4px auto;
+    border-radius: 2px;
+    transition: all ease-in-out 0.3s;
+}
+
+.bar-1.active{
+    -webkit-transform: translate(0px,12px) rotate(45deg);
+    transform: translate(0px,12px) rotate(45deg);
+}
+
+.bar-2.active{
+    opacity: 0;
+}
+
+.bar-3.active{
+    -webkit-transform: translate(0px, -12px) rotate(-45deg);
+    transform: translate(0px, -12px) rotate(-45deg);
+}
+
 .navigation-list {
     list-style-type: none;
-    display: none;
+    display: block;
     flex-direction: column;
     text-align: center;
     background: #CCC7C3;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 0;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.navigation-list.closed {
+    height: 161px;
+}
+
+.menu-hamburger {
+    width: 100%;
+    background: #596275;
 }
 
 .hamburger-icon {
-    text-align: center;
+    margin: 0 auto;
+    width: 50px;
+    border-radius: 5px;
+    position: relative;
     cursor: pointer;
-    font-size: 2rem;
-    padding: 10px;
-    background: #596275;
-    color: #CCC7C3;
+    transition: all linear .3s;
+    padding: 4px;
+    z-index: 1;
 }
 
 .list-item{
@@ -64,6 +101,7 @@ body {
         flex-direction: row;
         background: none;
         justify-content: flex-end;
+        overflow: unset;
     }
 
     .navigation-panel {
