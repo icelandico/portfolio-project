@@ -13,6 +13,7 @@ html {
 body {
     min-height: 100%;
     border: 5px solid #596275;
+    overflow: hidden;
 }
 
 .bar {
@@ -102,6 +103,9 @@ body {
         background: none;
         justify-content: flex-end;
         overflow: unset;
+        position: absolute;
+        transition: 1s ease-in-out all;
+        right: -150px;
     }
 
     .navigation-panel {
@@ -114,6 +118,10 @@ body {
 
     .social-list-item li {
         display: inline-block;
+    }
+
+    .shift {
+        right: 0;
     }
 
     /* Menu items hover effect */
