@@ -44,8 +44,6 @@ body {
     font-size: 2rem;
 }
 
-
-
 .social-icon {
     display: inline;
     font-size: 2rem;
@@ -80,6 +78,8 @@ body {
         display: inline-block;
     }
 
+    /* Menu items hover effect */
+
     .navigation-list .list-item a,
     .navigation-list .list-item a:after,
     .navigation-list .list-item a:before {
@@ -101,9 +101,9 @@ body {
         right: 0;
         margin: auto;
         width: 0;
-        content: '.';
+        content: '';
         color: transparent;
-        background: #aaa;
+        background: #596275;
         height: 1px;
     }
 
