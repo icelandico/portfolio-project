@@ -77,7 +77,6 @@ body {
     transition: 0.3s ease;
 }
 
-
 .list-item a {
     text-decoration: none;
     color: #596275;
@@ -138,6 +137,16 @@ body {
 
     /* Menu items hover effect */
 
+    .list-item:hover,
+    .social-icon-container:hover {
+        background: none;
+    }
+
+    .list-item:hover > a,
+    .social-icon-container:hover > li a {
+        color: unset;
+    }
+
     .navigation-list .list-item.anchor-element,
     .navigation-list .list-item.anchor-element:after,
     .navigation-list .list-item.anchor-element:before {
@@ -172,6 +181,7 @@ body {
         transition: 0.5s ease-in-out;
     }
     .social-icon span:hover {
+        color: #000;
         transform: scale(1.1) rotate(45deg);
     }
 
