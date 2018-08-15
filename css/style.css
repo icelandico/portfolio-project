@@ -74,12 +74,24 @@ body {
 
 .list-item{
     padding: 1rem;
+    transition: 0.3s ease;
 }
+
 
 .list-item a {
     text-decoration: none;
     color: #596275;
     font-size: 2rem;
+}
+
+.list-item:hover,
+.social-icon-container:hover {
+    background: #596275;
+}
+
+.list-item:hover > a,
+.social-icon-container:hover > li a {
+    color: #CCC7C3;
 }
 
 .social-icon {
