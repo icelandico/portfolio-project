@@ -5,7 +5,7 @@
 
 html {
     font-size: 8px;
-    font-family: 'Georgia', serif;
+    font-family: 'Vollkorn', serif;
     height: 100%;
     color: #596275;
 }
@@ -126,23 +126,23 @@ body {
 
     /* Menu items hover effect */
 
-    .navigation-list .list-item a,
-    .navigation-list .list-item a:after,
-    .navigation-list .list-item a:before {
+    .navigation-list .list-item.anchor-element,
+    .navigation-list .list-item.anchor-element:after,
+    .navigation-list .list-item.anchor-element:before {
         transition: all 0.5s;
     }
 
-    .navigation-list .list-item a:hover {
+    .navigation-list .list-item.anchor-element:hover {
         color: #000;
     }
 
-    .navigation-list .list-item a {
+    .navigation-list .list-item.anchor-element {
         position: relative;
     }
 
-    .navigation-list .list-item a:after {
+    .navigation-list .list-item.anchor-element:after {
         position: absolute;
-        bottom: -5px;
+        bottom: -15px;
         left: 0;
         right: 0;
         margin: auto;
@@ -153,8 +153,14 @@ body {
         height: 1px;
     }
 
-    .navigation-list .list-item a:hover:after {
+    .navigation-list .list-item.anchor-element:hover:after {
         width: 100%;
+    }
+    .social-icon span {
+        transition: 0.5s ease-in-out;
+    }
+    .social-icon span:hover {
+        transform: scale(1.1) rotate(45deg);
     }
 
 }
