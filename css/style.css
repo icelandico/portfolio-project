@@ -115,7 +115,8 @@ body {
         justify-content: flex-end;
         overflow: unset;
         position: absolute;
-        transition: 1s ease-in-out all;
+        transition: 1s;
+        transition-timing-function: cubic-bezier(.12,.03,.56,1.33);
         right: -150px;
     }
 
@@ -162,13 +163,13 @@ body {
     }
 
     .navigation-list .list-item.anchor-element:after {
+        content: '';
         position: absolute;
         bottom: -15px;
         left: 0;
         right: 0;
         margin: auto;
         width: 0;
-        content: '';
         color: transparent;
         background: #596275;
         height: 1px;
