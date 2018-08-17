@@ -96,7 +96,7 @@ body {
 .social-icon {
     display: inline;
     font-size: 2rem;
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .social {
@@ -112,7 +112,20 @@ body {
     text-align: center;
 }
 
+.content {
+    margin-top: 10%;
+}
+
+.map {
+    background: url('../image/map_hero.png') no-repeat;
+    background-size: cover;
+    height: 130px;
+}
+
 @media screen and (min-width: 768px) {
+    body {
+        padding: 0 25px;
+    }
     .hamburger-icon {
         display: none;
     }
@@ -126,7 +139,8 @@ body {
         position: absolute;
         transition: 1s;
         transition-timing-function: cubic-bezier(.12,.03,.56,1.33);
-        right: -150px;
+        right: -165px;
+        padding-right: 25px;
     }
 
     .navigation-panel {
@@ -193,6 +207,10 @@ body {
     .social-icon span:hover {
         color: #000;
         transform: scale(1.1) rotate(45deg);
+    }
+
+    .map {
+        height: 250px;
     }
 
 }
