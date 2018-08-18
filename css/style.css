@@ -1,7 +1,7 @@
 
 * {
     box-sizing: border-box;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 html {
@@ -129,9 +129,13 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 2rem 0;
     font-weight: 600;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
 }
 
 .about p {
