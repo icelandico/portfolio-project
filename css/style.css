@@ -81,7 +81,8 @@ body {
     transition: 0.3s linear;
 }
 
-.list-item a {
+.list-item a,
+.button-link a{
     text-decoration: none;
     color: #596275;
     font-size: 2rem;
@@ -181,16 +182,36 @@ h2 {
     height: 300px;
     overflow: hidden;
     transition: 1s all;
-    border:solid 5px #ffffff;
     cursor: pointer;
     margin: 1% 0;
     box-shadow: 0 0 5px #000;
+    position: relative;
+}
+
+.button-link {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: -20%;
+    margin-left: -40px;
+    border: 2px solid #596275;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: none;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 .project-container:hover .map-inner > img {
     height: 100%;
+    opacity: 0.6;
 }
 
+.project-container:hover .button-link {
+    left: 50%;
+}
 .map-inner {
     height: 100%;
 }
@@ -202,6 +223,7 @@ h2 {
     object-fit: cover;
     vertical-align: middle;
     filter: grayscale(12);
+    border: 1px solid #fff;
 }
 
 .footer {
@@ -225,6 +247,7 @@ h2 {
 
     .content {
         margin-top: 10rem;
+        text-align: left;
     }
 
     .about,
