@@ -174,27 +174,31 @@ h2 {
 .map-projects {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
 }
 
 .project-container {
-    flex-basis: 28%;
+    flex-basis: 60%;
     height: 300px;
     overflow: hidden;
     transition: 1s all;
     border:solid 5px #ffffff;
-    margin: 2% 0;
+    cursor: pointer;
 }
 
-.project-container:hover .map-inner {
+.project-container:hover .map-inner > img {
     transform: scale(0.95);
 }
 
 .map-inner {
     height: 100%;
-    background: center url('https://carbonmade-media.accelerator.net/35061812;966x1200.webp') no-repeat;
-    background-size: cover;
+}
+
+.map-inner > img {
+    width: 100%;
     transition: 1s all;
+    object-fit: cover;
+    vertical-align: middle;
+    filter: grayscale(12);
 }
 
 .footer {
@@ -219,6 +223,7 @@ h2 {
     .content {
         margin-top: 10rem;
     }
+
     .about,
     .skills,
     .map-projects {
@@ -237,7 +242,7 @@ h2 {
         overflow: unset;
         position: absolute;
         transition: 1s;
-        transition-timing-function: cubic-bezier(.12,.03,.56,1.33);
+        transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
         right: -170px;
         padding-right: 15px;
     }
@@ -263,7 +268,6 @@ h2 {
     }
 
     /* Menu items hover effect */
-
     .list-item:hover,
     .social-icon-container:hover {
         background: none;
@@ -305,9 +309,11 @@ h2 {
     .navigation-list .list-item.anchor-element:hover:after {
         width: 80%;
     }
+
     .social-icon span {
         transition: 0.5s ease-in-out;
     }
+
     .social-icon span:hover {
         color: #000;
         transform: scale(1.1) rotate(45deg);
@@ -319,5 +325,13 @@ h2 {
 
     .flex-item {
         flex-basis: 20%;
+    }
+
+    .project-container {
+        flex-basis: 30%;
+    }
+
+    .map-projects {
+        justify-content: space-between;
     }
 }
