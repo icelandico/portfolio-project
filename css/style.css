@@ -1,7 +1,7 @@
 
 * {
     box-sizing: border-box;
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
 }
 
 html {
@@ -142,12 +142,16 @@ h2 {
 
 .skills-container {
     display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-item {
-    flex-basis: 20%;
+    flex-basis: 40%;
     margin: 2rem;
     vertical-align: middle;
 }
