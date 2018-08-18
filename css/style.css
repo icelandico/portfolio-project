@@ -154,17 +154,18 @@ h2 {
 .icon-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .flex-item {
-    flex-basis: 40%;
+    flex-basis: 0;
     margin: 2rem;
     vertical-align: middle;
 }
 
 .skill-icon {
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .icon {
@@ -224,6 +225,10 @@ h2 {
     bottom: 40%;
 }
 
+.project-container.web-project:hover .button-link {
+    bottom: 50%;
+}
+
 .project-inner {
     height: 100%;
 }
@@ -245,7 +250,6 @@ h2 {
 
 .project-container.web-project:hover .project-inner > img {
     opacity: 0.5;
-
 }
 
 .project-container.web-project {
@@ -255,7 +259,8 @@ h2 {
 
 .project-description {
     padding: 3rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .footer {
