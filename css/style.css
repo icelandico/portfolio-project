@@ -110,6 +110,7 @@ body {
 .content {
     margin: 2rem 10px 0 10px;
     padding-bottom: 10rem;
+    text-align: center;
 }
 
 section {
@@ -123,9 +124,7 @@ section {
     filter: grayscale(12);
 }
 
-.about,
-.skills,
-.map-projects {
+.centered {
     margin: 0 auto;
 }
 
@@ -174,6 +173,7 @@ h2 {
 .map-projects {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
 }
 
 .project-container {
@@ -183,6 +183,8 @@ h2 {
     transition: 1s all;
     border:solid 5px #ffffff;
     cursor: pointer;
+    margin: 1% 0;
+    box-shadow: 0 0 5px #000;
 }
 
 .project-container:hover .map-inner > img {
@@ -330,6 +332,11 @@ h2 {
 
     .project-container {
         flex-basis: 30%;
+        box-shadow: none;
+    }
+
+    .project-container:hover {
+        box-shadow: 0 0 5px #000;
     }
 
     .map-projects {
