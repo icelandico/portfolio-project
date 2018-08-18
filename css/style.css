@@ -1,7 +1,7 @@
 
 * {
     box-sizing: border-box;
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
 }
 
 html {
@@ -124,7 +124,8 @@ section {
 }
 
 .about,
-.skills {
+.skills,
+.map-projects {
     margin: 0 auto;
 }
 
@@ -132,10 +133,6 @@ h2 {
     font-size: 3rem;
     margin: 2rem 0;
     font-weight: 600;
-}
-
-.skills-container h2 {
-    font-size: 2.5rem;
 }
 
 .about p {
@@ -147,6 +144,10 @@ h2 {
 .skills-container {
     display: flex;
     flex-direction: column;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
 }
 
 .icon-container {
@@ -168,6 +169,32 @@ h2 {
 .icon {
     display:inline-block;
     vertical-align: middle
+}
+
+.map-projects {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.project-container {
+    flex-basis: 28%;
+    height: 300px;
+    overflow: hidden;
+    transition: 1s all;
+    border:solid 5px #ffffff;
+    margin: 2% 0;
+}
+
+.project-container:hover .map-inner {
+    transform: scale(0.95);
+}
+
+.map-inner {
+    height: 100%;
+    background: center url('https://carbonmade-media.accelerator.net/35061812;966x1200.webp') no-repeat;
+    background-size: cover;
+    transition: 1s all;
 }
 
 .footer {
@@ -193,7 +220,8 @@ h2 {
         margin-top: 10rem;
     }
     .about,
-    .skills {
+    .skills,
+    .map-projects {
         max-width: 70%;
     }
 
