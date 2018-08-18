@@ -118,11 +118,12 @@ section {
     margin-bottom: 3rem;
 }
 
-.map {
-    background: url('../image/map_hero.png') no-repeat;
-    background-size: cover;
+.hero-img {
+    width: 100%;
+    object-fit: cover;
     height: 130px;
     filter: grayscale(12);
+    object-position: 40% 100%;
 }
 
 .centered {
@@ -211,7 +212,7 @@ h2 {
     cursor: pointer;
     color: #596275;
     transition: 0.7s;
-    transition-timing-function: cubic-bezier(.16,.25,.63,1.45);
+    transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
 }
 
 .project-container:hover .map-inner > img {
@@ -360,7 +361,7 @@ h2 {
         transform: scale(1.1) rotate(45deg);
     }
 
-    .map {
+    .hero-img {
         height: 250px;
     }
 
