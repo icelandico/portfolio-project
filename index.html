@@ -11,25 +11,28 @@
         crossorigin="anonymous"
   />
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" />
+  <link rel="stylesheet" href="css/technology-icons.css">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <header>
-  <topbar>
-    <navbar class="navigation-panel">
+  <div class="header-container">
+    <nav class="navigation-panel">
       <div class="menu-hamburger">
-      <div class="hamburger-icon">
-        <div class="bar bar-1"></div>
-        <div class="bar bar-2"></div>
-        <div class="bar bar-3"></div>
+        <div class="hamburger-icon">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
       </div>
+      <div>
       <ul class="navigation-list">
-        <li class="list-item anchor-element"><a href="#Home">Home</a></li>
-        <li class="list-item anchor-element"><a href="#Maps">Map Projects</a></li>
-        <li class="list-item anchor-element"><a href="#Webdev">Web Projects</a></li>
-        <li class="list-item anchor-element"><a href="#Contact">Contact</a></li>
-        <li class="list-item social anchor-element"><a href="#Social">Social</a></li>
+        <li class="list-item anchor-element current"><a href="#Home">Home</a></li>
+        <li class="list-item anchor-element"><a href="maps.html">Map Projects</a></li>
+        <li class="list-item anchor-element"><a href="webdev.html">Web Projects</a></li>
+        <li class="list-item anchor-element"><a href="contact.html">Contact</a></li>
+        <li class="list-item social anchor-element"><a href="#">Social</a></li>
         <li class="list-item social-list-item">
           <ul class="social-icon-container">
             <li class="social-icon">
@@ -48,15 +51,68 @@
         </li>
       </ul>
       </div>
-    </navbar>
-  </topbar>
+    </nav>
+  </div>
 </header>
 <div class="content">
-  <div class="hero-map">
-    <div class="map">
-
+  <section class="hero-map">
+    <div class="map"></div>
+  </section>
+  <section class="about">
+    <h2>Hello, my name is Michał</h2>
+    <p>I can help You with projects related to front-end developing and cartography. Currently I focus on merging these
+       two interests.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi fugit ipsa magnam modi
+       odio perspiciatis quaerat quis rerum sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sunt,
+      veniam! Atque, consequatur dicta facilis minus officia officiis perspiciatis provident quidem soluta totam! Beatae
+      consequuntur deserunt dignissimos ex harum labore, officia officiis quos soluta tempora ut veritatis voluptates.
+      A aspernatur assumenda consectetur cupiditate ducimus ea earum fuga fugit, inventore laudantium magnam neque
+      officia officiis perferendis possimus provident quae quasi quidem reiciendis repellat sequi similique velit
+      veritatis vero voluptates. A asperiores blanditiis consectetur consequuntur dignissimos dolorum ducimus fugiat
+      in iure iusto numquam obcaecati qui quidem, rem rerum sunt totam. Aperiam at maiores officiis perspiciatis.
+      Cum cumque dignissimos, ducimus facere sed sequi.
+    </p>
+  </section>
+  <section class="skills">
+    <h2>Skills constantly I'm working on</h2>
+    <div class="skills-container">
+      <div class="flex-item skill-icon">
+        <span class="icon fab fa-js-square"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon fab fa-react"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon fab fa-html5"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon fab fa-css3-alt"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon fab fa-node"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-jquery"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-visual-studio"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-illustrator"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-photoshop"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-git"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-webpack"></span>
+      </div>
+      <div class="flex-item skill-icon">
+        <span class="icon icon-bootstrap"></span>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
 <footer class="footer">
   Copyright Michał Muszyński 2018

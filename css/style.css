@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     /*outline: 1px solid red;*/
@@ -7,13 +8,16 @@ html {
     font-size: 8px;
     font-family: 'Vollkorn', serif;
     height: 100%;
+    width: 100%;
     color: #596275;
+    overflow-x: hidden
 }
 
 body {
     min-height: 100%;
     border: 5px solid #596275;
-    overflow: hidden;
+    position: relative;
+    overflow-x: hidden
 }
 
 .bar {
@@ -74,7 +78,7 @@ body {
 
 .list-item{
     padding: 1rem;
-    transition: 0.3s ease;
+    transition: 0.3s linear;
 }
 
 .list-item a {
@@ -103,6 +107,61 @@ body {
     display: none;
 }
 
+.content {
+    margin: 2rem 10px 0 10px;
+    padding-bottom: 10rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.map {
+    background: url('../image/map_hero.png') no-repeat;
+    background-size: cover;
+    height: 130px;
+    filter: grayscale(12);
+}
+
+.about,
+.skills {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.flex-item {
+    flex-basis: 20%;
+    margin: 2rem;
+    vertical-align: middle;
+}
+
+.skill-icon {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.icon {
+    display:inline-block;
+    vertical-align: middle
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -110,22 +169,26 @@ body {
     width: 100%;
     padding: 3rem 0;
     text-align: center;
-}
-
-.content {
-    margin-top: 10%;
-}
-
-.map {
-    background: url('../image/map_hero.png') no-repeat;
-    background-size: cover;
-    height: 130px;
+    border-top: 1px solid #596275;
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        padding: 0 25px;
+
+    .header-container,
+    .content {
+        margin-left: 25px;
+        margin-right: 25px;
     }
+
+    .content {
+        margin-top: 10rem;
+    }
+    .about,
+    .skills {
+        max-width: 70%;
+    }
+
     .hamburger-icon {
         display: none;
     }
@@ -139,8 +202,8 @@ body {
         position: absolute;
         transition: 1s;
         transition-timing-function: cubic-bezier(.12,.03,.56,1.33);
-        right: -165px;
-        padding-right: 25px;
+        right: -170px;
+        padding-right: 15px;
     }
 
     .navigation-panel {
@@ -153,6 +216,10 @@ body {
 
     .social-list-item li {
         display: inline-block;
+    }
+
+    .social-list-item {
+        padding-left: 30px;
     }
 
     .shift {
@@ -177,10 +244,6 @@ body {
         transition: all 0.5s;
     }
 
-    .navigation-list .list-item.anchor-element:hover {
-        color: #000;
-    }
-
     .navigation-list .list-item.anchor-element {
         position: relative;
     }
@@ -198,8 +261,13 @@ body {
         height: 1px;
     }
 
+    .navigation-list .list-item.anchor-element.current:after {
+        color: #000;
+        width: 80%;
+    }
+
     .navigation-list .list-item.anchor-element:hover:after {
-        width: 100%;
+        width: 80%;
     }
     .social-icon span {
         transition: 0.5s ease-in-out;
@@ -213,4 +281,7 @@ body {
         height: 250px;
     }
 
+    .flex-item {
+        flex-basis: 20%;
+    }
 }
