@@ -302,12 +302,11 @@ input, textarea {
 
 .fill-label {
     position: absolute;
-    transition: 0.2s;
+    transition: 0.5s;
     color: #596275;
     top: 0;
     left: 0;
     padding: 10px 12px;
-    /*width: 100%;*/
 }
 
 input:focus + .fill-label,
@@ -345,10 +344,17 @@ textarea:valid + .fill-label {
     color: #596275;
 }
 
-.button-email {
+.contact-email {
+    margin-top: 2rem;
+}
+
+.mail-icon {
+    text-decoration: none;
+    display: block;
     margin-top: 2rem;
     font-size: 2rem;
     text-transform: unset;
+    color: #596275;
 }
 
 .button-submit:hover {
