@@ -395,7 +395,7 @@ textarea:valid + .fill-label {
         position: absolute;
         transition: 1s;
         transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
-        right: -180px;
+        right: -220px;
         padding-right: 15px;
         padding-top: 2.5rem;
     }
