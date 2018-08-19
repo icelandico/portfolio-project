@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Michal M.</title>
+  <meta name="description" content="Personal portfolio website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" />
+  <link rel="stylesheet" href="css/technology-icons.css">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <nav class="navigation-panel">
+      <div class="menu-hamburger">
+        <div class="hamburger-icon">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
+      </div>
+      <div>
+        <ul class="navigation-list">
+          <li class="list-item anchor-element"><a href="index.html">Home</a></li>
+          <li class="list-item anchor-element"><a href="maps.html">Map Projects</a></li>
+          <li class="list-item anchor-element"><a href="webdev.html">Web Projects</a></li>
+          <li class="list-item anchor-element current"><a href="#">Contact</a></li>
+          <li class="list-item social anchor-element"><a href="#">Social</a></li>
+          <li class="list-item social-list-item">
+            <ul class="social-icon-container">
+              <li class="social-icon">
+                <a href="https://twitter.com/cartohistory" target="_blank"><span class="fab fa-twitter"></span></a>
+              </li>
+              <li class="social-icon">
+                <a href="https://icelandico.carbonmade.com/" target="_blank"><span class="fas fa-map"></span></a>
+              </li>
+              <li class="social-icon">
+                <a href="https://www.linkedin.com/in/michal-muszynski/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+              </li>
+              <li class="social-icon">
+                <a href="https://github.com/icelandico" target="_blank"><span class="fab fa-github"></span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="content">
+  <section class="hero-map">
+    <div class="map">
+      <img src="image/map_hero_kalisz.png" class="hero-img" alt="kalisz-map">
+    </div>
+  </section>
+  <section class="contact centered">
+    <h2>Interested in working together?</h2>
+    <h3>Contact me</h3>
+    <form action="https://formspree.io/michal.muszynski@pm.me"
+          method="POST">
+      <div class="form-input name">
+        <input id="name" name="name" type="text" required>
+        <label class="fill-label" for="name">Your Name</label>
+      </div>
+
+      <div class="form-input name">
+        <input id="email" name="name" type="text" required>
+        <label class="fill-label" for="email">Your mail</label>
+      </div>
+
+      <div class="form-input name">
+        <input id="subject" name="name" type="text" required>
+        <label class="fill-label" for="subject">Subject</label>
+      </div>
+
+      <div class="form-input message">
+        <textarea id="textarea-label" rows="4" required name="name"></textarea>
+        <label class="fill-label" for="textarea-label">Message</label>
+      </div>
+
+      <div class="form-input">
+        <button class="button-submit">Send</button>
+      </div>
+    </form>
+  </section>
+</div>
+<footer class="footer">
+  Copyright Michał Muszyński 2018
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
