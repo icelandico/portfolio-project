@@ -54,6 +54,7 @@ body {
     height: 0;
     transition: all 1s ease-in-out;
     overflow: hidden;
+    padding-top: 2.5rem;
 }
 
 .navigation-list.closed {
@@ -306,7 +307,7 @@ h2 {
         position: absolute;
         transition: 1s;
         transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
-        right: -170px;
+        right: -180px;
         padding-right: 15px;
     }
 
