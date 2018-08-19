@@ -142,7 +142,7 @@ h3 {
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.5;
     text-align: justify;
 }
@@ -188,7 +188,7 @@ h3 {
     height: 300px;
     transition: 1s all;
     cursor: pointer;
-    margin: 1% 0;
+    margin: 3% 0;
     box-shadow: 0 0 5px #000;
     position: relative;
     overflow: hidden;
@@ -216,7 +216,7 @@ h3 {
     background: none;
     cursor: pointer;
     color: #596275;
-    transition: 0.7s;
+    -webkit-transition: height 0.7s;
     transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
 }
 
@@ -250,10 +250,6 @@ h3 {
 .project-inner > img.web-project-image {
     max-height: 170px;
     object-position: 0 0;
-}
-
-.project-container.web-project:hover .project-inner > img {
-    opacity: 0.5;
 }
 
 .project-container.web-project {
@@ -378,7 +374,7 @@ textarea:valid + .fill-label {
     .skills,
     .map-projects,
     .web-projects,
-    .contact{
+    .contact {
         max-width: 70%;
     }
 
