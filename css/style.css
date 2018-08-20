@@ -218,6 +218,7 @@ h3 {
     color: #596275;
     -webkit-transition: all 0.7s;
     transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
+    z-index: 3;
 }
 
 .project-container:hover .project-inner > img {
@@ -227,6 +228,12 @@ h3 {
 
 .project-container:hover .button-link {
     bottom: 40%;
+}
+
+.button-link:hover {
+    background: #596275;
+    color: #fff;
+    z-index: 1;
 }
 
 .project-container.web-project:hover .button-link {
