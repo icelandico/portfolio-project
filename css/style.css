@@ -216,7 +216,7 @@ h3 {
     background: none;
     cursor: pointer;
     color: #596275;
-    -webkit-transition: height 0.7s;
+    -webkit-transition: all 0.7s;
     transition-timing-function: cubic-bezier(.12, .03, .56, 1.33);
 }
 
@@ -338,6 +338,8 @@ textarea:valid + .fill-label {
     font-weight: 900;
     text-transform: uppercase;
     color: #596275;
+    background: none;
+    outline: none;
 }
 
 .contact-email {
