@@ -7,9 +7,9 @@ Created by FontForge 20150905 at Sun Mar 20 04:14:23 2016
 Copyright (c) 2016, sid
 </metadata>
 <defs>
-<font id="technology-icons" horiz-adv-x="512" >
+<font id="tech-icons.css" horiz-adv-x="512" >
   <font-face 
-    font-family="technology-icons"
+    font-family="tech-icons.css"
     font-weight="400"
     font-stretch="normal"
     units-per-em="512"
