@@ -64,7 +64,7 @@
   <section class="contact centered">
     <h2>Interested in working together?</h2>
     <h3>Contact me via form</h3>
-    <form action="https://formspree.io/michal.muszynski@pm.me"
+    <form action="form.php"
           method="POST">
       <div class="form-input name">
         <input id="name" name="name" type="text" required>
@@ -72,22 +72,22 @@
       </div>
 
       <div class="form-input name">
-        <input id="email" name="name" type="text" required>
+        <input id="email" name="email" type="text" required>
         <label class="fill-label" for="email">Your mail</label>
       </div>
 
       <div class="form-input name">
-        <input id="subject" name="name" type="text" required>
+        <input id="subject" name="subject" type="text" required>
         <label class="fill-label" for="subject">Subject</label>
       </div>
 
       <div class="form-input message">
-        <textarea id="textarea-label" rows="4" required name="name"></textarea>
+        <textarea id="textarea-label" rows="4" required name="message"></textarea>
         <label class="fill-label" for="textarea-label">Message</label>
       </div>
 
       <div class="form-input">
-        <button class="button-submit">Send</button>
+        <button type="submit" class="button-submit" name="submit">Send</button>
       </div>
     </form>
     <div class="contact-email">
@@ -103,6 +103,7 @@
 </footer>
 
 <script async src="js/main.js"></script>
+<script async src="js/server.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107357909-2"></script>
 <script async>
   window.dataLayer = window.dataLayer || [];

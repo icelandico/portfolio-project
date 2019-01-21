@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cssnano": "^4.1.7",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
     "postcss-cli": "^6.0.1",
     "postcss-load-plugins": "^2.3.0",
     "postcss-loader": "^3.0.0",
